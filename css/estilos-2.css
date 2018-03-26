@@ -1,0 +1,199 @@
+* {          /*todo los objetos = "*" */
+	border: 0;  /*borde*/
+	margin: 0;  /*margen*/
+	padding: 0; /*relleno*/
+	-webkit-box-sizing: border-box; /*chrome, zafari, opera*/
+	-moz-box-sizing: border-box;  /*prefijo para que sea visto en mozilla*/
+	-ms-box-sizing: border-box;  /*internet explorer*/
+	box-sizing: border-box;
+	}
+body {
+		   background: #333C55;    /*Propiedad para color de fondo*/
+		   color: #0d72ff;         /*color de fuente*/
+		   font-family: arial;     /*Nombre de la funte*/
+	}
+header, section, footer {
+	width: 90%;   /*pixeles del ancho del cuadro*/
+	background: #fbfbfb;    /*Color de fondo del cuadro*/
+	margin: 5px auto; /*margen del objeto  "auto= centrar el cuadro"*/
+	border-radius: 10px;   /*bordes en las esquinas*/
+	/*height: 50px;  grande del cuadro*/ 
+	color: #333;   /*color de la letra dentro del cuadro*/
+	padding: 1em;   /*margen interno*/
+	text-align: center;
+
+}
+.logo, nav {
+	display: inline-block;
+	vertical-align: middle;
+	/*border: 1px solid red;  Tamaño del borde*/
+	/*linea continua solid, linea punteada dashed y puntos dotted*/
+	width: 30%;
+	margin: 0 auto;
+	text-align: left;
+}
+nav {
+	width: 65%;
+	text-align: right;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {              /*Vinculo en reposo*/
+	background: green;
+	color:red;
+	padding: .7em 1.5em;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	-webkit-transition: all ease-out .5s;
+	-moz-transition: all ease-out .5s;
+	-ms-transition: all ease-out .5s;
+	transition: all ease-out .5s;
+}
+nav ul li a:hover, .activo {   /*Cuando el puntero pasa sobre el vinculo*/
+	background: blue;
+	color: #fff266;
+	-webkit-transition: all ease-out .5s; /*ease-out la animacion es mas rapida al final*/
+	-moz-transition: all ease-out .5s;
+	-ms-transition: all ease-out .5s;  /*ease-int la animacion es mas rapida al inicio*/
+	transition: all ease-out .5s;  /*lineal la animacion es lineal*/
+}
+section h1 {
+	margin: 10px 0;
+	
+}
+section p {
+	display: inline-block;
+	
+}
+section div {
+	margin: 20px 0;
+}
+
+ div article.servicio {
+	display: inline-block;
+	vertical-align: top;
+	width: 22%;
+	background: #dfdfdf;
+	padding: 1em;
+	border-radius: 10px;
+	margin: 10px 0;
+}
+.ver-mas {
+	width: 100px;
+	height: 40px;
+	border: 1px;
+	margin: 10px auto;
+	
+}
+.ver-mas a {
+	width: 100%;
+	background: #f60;
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	line-height: 40px;          /*interlineado del texto
+	por lo tanto el valor que toma parte desde el centro hacia 
+	arriba y abajo dividiendo el valor desde el centro*/
+	text-align: center;
+	text-decoration: none;
+}
+i.ico-servicio {
+  width: 70px;
+  line-height: 70px;
+  height: 70px;
+  background: red;
+  margin: 10px 0;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%; /*para hacer un redondo es recomendable usar un porcentaje*/
+}
+footer {
+  background: #333;
+  color: #fff;
+  margin: 5px auto 0 auto; /*primer=arriba segundo=izquierda tercero=abajo cuarto=derecha*/
+  border-radius: 10px 10px 0 0;
+}
+span.pie-pagina a {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+  font-size: 1em;
+  border-radius: 50%;
+}
+span.pie-pagina a:hover {
+  background: #999;
+  color: #666;
+}
+@media (max-width: 1000px){
+	header,section,footer {
+		width: 100%
+	}
+}
+@media (max-width: 800px){
+	.logo, nav{
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+.video,aside {
+	    display: block;
+		width: 100%;
+		border: none;
+	}
+}
+@media (max-width: 500px){
+	.logo{
+		text-align: center;
+	}
+	nav ul li {
+		display: block;
+	}
+	nav ul li a {
+		width: 100%;
+		display: block;
+		margin: 2px 0;
+	}
+	article.servicio{
+		width: 100%;
+		margin: 2px 0;
+	}
+	span.pie-pagina{
+		font-size: 14px;
+	}
+	span.pie-pagina a {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+	}
+	aside{
+		display: none;
+	}
+}
+section h2 {
+	text-align: left;
+	margin: 10px;
+	padding: .5em;
+	margin: 10px 55px;
+}
+div.medio {
+	margin: 10px;
+	padding: .5em;
+	margin: 10px 55px;
+  }
+aside.funciones, article.imagen {
+display: inline-block;
+
+}
+article.imagen {
+	display: inline-block;
+	float: right;
+}

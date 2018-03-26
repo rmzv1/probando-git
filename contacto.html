@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<!--Esta etiqueta (utf-8) sirve para la codificacion en español-->
+	<meta charset="utf-8">
+	<!-- Titulo de la pestaña-->
+	<title>contacto</title>
+	<!-- Palabras claves-->
+	<meta name="keywords" content="html5, css3, responsive, desing, desarrollo web, js,frontend, jquerry">
+	<!-- Descripcion de la pag web-->
+	<meta name="description" content="aprende a programar como un verdadero front-end">
+	<meta name="viewport" content="width=divice-width, initial-scale=1"> <!--sirve para que se visualize en cualquier dispositivo-->
+     	   <!--background: #ff530d;*/    /*Propiedad para color de fondo-->
+		   <!--color: #fffff7;*/         /*color de fuente-->
+		   <!--font-family: arial;*/     /*Nombre de la funte-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	
+</head>
+<body>
+	<header>
+		<!--h1 significa titulo mientras mas grande mas pequeño es el titulo, llega hasta h5-->
+		<div class="logo">
+			<img src="img/html5.jpg" alt="html5 web">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html" >Inicio</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="contacto.html"class="activo">Contacto</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<section>
+		<form action="enviar-contacto.php" method="get">  <!--atributo action: Indica a que archivo se van a enviar los datos-->
+		<!--method atributo: indica que tipo de metodo se usara para el envio de los datos. Si es por metodo det, los valores se enviaran a traves de la url y si es por metodo post, se enviaran de forma oculta-->
+			<fieldset>
+				<legend>Formulario de Contacto</legend>
+				<input type="text" name="nombre" placeholder=" Ingrese su Nombre" required> <!--Entrada de tipo texto "Cuadro de ingreso"-->
+				<input type="email" name="correo" placeholder=" Ingrese su Correo" required>
+				<input type="number" name="asunto" placeholder=" asunto">
+				<textarea name="mensaje" required placeholder=" Escriba su texto"></textarea>
+				<input type="submit" value="Eviar Datos">
+			</fieldset>
+		</form>
+		<div class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1494.7877209756614!2d-72.93602837527848!3d-41.47012273726537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183a5096476959%3A0x111574e8bb4ebfd!2sEj%C3%A9rcito+200%2C+Puerto+Montt%2C+X+Regi%C3%B3n!5e0!3m2!1ses-419!2scl!4v1446590694323" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	
+	<footer>
+		<span class="pie-pagina
+        ">Siguenos en:
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://es.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+        <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </span>
+	</footer>
+	<!--<h1>Hola, por aqui paso Pato</h1>-->
+</body>
+<html>

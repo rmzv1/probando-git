@@ -1,0 +1,244 @@
+* {          /*todo los objetos = "*" */
+	border: 0;  /*borde*/
+	margin: 0;  /*margen*/
+	padding: 0; /*relleno*/
+	-webkit-box-sizing: border-box; /*chrome, zafari, opera*/
+	-moz-box-sizing: border-box;  /*prefijo para que sea visto en mozilla*/
+	-ms-box-sizing: border-box;  /*internet explorer*/
+	box-sizing: border-box;
+	}
+body {
+		   background: #333C55;    /*Propiedad para color de fondo*/
+		   color: #0d72ff;         /*color de fuente*/
+		   font-family: arial;     /*Nombre de la funte*/
+	}
+header, section, footer {
+	width: 90%;   /*pixeles del ancho del cuadro*/
+	background: #fbfbfb;    /*Color de fondo del cuadro*/
+	margin: 5px auto; /*margen del objeto  "auto= centrar el cuadro"*/
+	border-radius: 10px;   /*bordes en las esquinas*/
+	/*height: 50px;  grande del cuadro*/ 
+	color: #333;   /*color de la letra dentro del cuadro*/
+	padding: 1em;   /*margen interno*/
+	text-align: center;
+
+}
+.logo, nav {
+	display: inline-block;
+	vertical-align: middle;
+	/*border: 1px solid red;  Tamaño del borde*/
+	/*linea continua solid, linea punteada dashed y puntos dotted*/
+	width: 30%;
+	margin: 0 auto;
+	text-align: left;
+}
+nav {
+	width: 65%;
+	text-align: right;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {              /*Vinculo en reposo*/
+	background: green;
+	color:red;
+	padding: .7em 1.5em;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	-webkit-transition: all ease-out .5s;
+	-moz-transition: all ease-out .5s;
+	-ms-transition: all ease-out .5s;
+	transition: all ease-out .5s;
+}
+nav ul li a:hover, .activo {   /*Cuando el puntero pasa sobre el vinculo*/
+	background: blue;
+	color: #fff266;
+	-webkit-transition: all ease-out .5s; /*ease-out la animacion es mas rapida al final*/
+	-moz-transition: all ease-out .5s;
+	-ms-transition: all ease-out .5s;  /*ease-int la animacion es mas rapida al inicio*/
+	transition: all ease-out .5s;  /*lineal la animacion es lineal*/
+}
+.video, aside {
+	display: inline-block;
+	vertical-align: top;
+	width:  60%;
+	border: 1px ;
+}
+aside{
+	width: 38%;
+	background: transparent;
+	padding: 1em;
+	border: none;
+	text-align: justify;
+	color:#fff;
+	border-radius: 10px;
+}
+aside audio, aside video{
+	width: 100%;
+}
+.video iframe {
+	width: 100%;
+	padding: 1em;
+}
+aside p {
+	margin-top: 15px;
+}
+article.servicio {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	background: #dfdfdf;
+	padding: 1em;
+	border-radius: 10px;
+}
+.ver-mas {
+	width: 100px;
+	height: 40px;
+	border: 1px;
+	margin: 10px auto;
+	
+}
+.ver-mas a {
+	width: 100%;
+	background: #f60;
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	line-height: 40px;          /*interlineado del texto
+	por lo tanto el valor que toma parte desde el centro hacia 
+	arriba y abajo dividiendo el valor desde el centro*/
+	text-align: center;
+	text-decoration: none;
+}
+i.ico-servicio {
+  width: 70px;
+  line-height: 70px;
+  height: 70px;
+  background: red;
+  margin: 10px 0;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%; /*para hacer un redondo es recomendable usar un porcentaje*/
+}
+footer {
+  background: #333;
+  color: #fff;
+  margin: 5px auto 0 auto; /*primer=arriba segundo=izquierda tercero=abajo cuarto=derecha*/
+  border-radius: 10px 10px 0 0;
+}
+span.pie-pagina a {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+  font-size: 1em;
+  border-radius: 50%;
+}
+span.pie-pagina a:hover {
+  background: #999;
+  color: #666;
+}
+/*============Formulario===============*/
+form {
+	border: 2px dashed #333;
+	width: 100%;
+	padding: 1em;
+}
+fieldset {
+	border: 1px solid #999;
+}
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="date"], select, textarea {
+	width: 30%;
+	border: 1px solid #333;
+	padding: .3em;
+	border-radius: 5px;
+	height: 30px;
+	margin: 5px 0;
+}
+input[type="tel"], input[type="date"] {
+	width: 45%;
+}
+.opciones-radio, .opciones-checkbox {
+	display: inline-block;
+	border: 1px solid #333;
+	border-radius: 5px;
+	width: 45%;
+	padding: .5em;
+}
+textarea {
+	height: 120px;
+}
+select, textarea {
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+}
+input[type="submit"] {
+	display: block;
+	background: orange;
+	color: white;
+	padding: .5em 1em;
+	margin: 0 auto 20px auto;
+	border-radius: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+	background: red;
+	color: #fff266;
+	-webkit-transition: all ease-out .5s; /*ease-out la animacion es mas rapida al final*/
+	-moz-transition: all ease-out .5s;
+	-ms-transition: all ease-out .5s;  /*ease-int la animacion es mas rapida al inicio*/
+	transition: all ease-out .5s;  /*lineal la animacion es lineal*/
+}
+.mapa {
+	width: 100%;
+	border: 2px solid black;
+	padding: .5em;
+	margin: 10px auto;
+}
+.mapa iframe {
+	width: 100%
+}
+
+/*============Fin Formulario===============*/
+/*============RESPONSIVE===============*/
+@media (max-width: 1000px){
+	header,section {
+		width: 100%
+	}
+}
+@media (max-width: 800px){
+	.logo, nav, section {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+.videop,aside {
+	    display: block;
+		width: 100%;
+		border: none;
+	}
+}
+@media (max-width: 500px){
+	.logo{
+		text-align: center;
+	}
+	nav ul li {
+		display: block;
+	}
+	nav ul li a {
+		width: 100%;
+		display: block;
+		margin: 2px 0;
+	}
+	aside{
+		display: block;
+	}
+}
