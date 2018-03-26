@@ -8,13 +8,13 @@
 	box-sizing: border-box;
 	}
 body {
-		   background: #333C55;    /*Propiedad para color de fondo*/
+		   background: rgb(0, 11, 41);    /*Propiedad para color de fondo*/
 		   color: #0d72ff;         /*color de fuente*/
 		   font-family: arial;     /*Nombre de la funte*/
 	}
 header, section, footer {
 	width: 90%;   /*pixeles del ancho del cuadro*/
-	background: #fbfbfb;    /*Color de fondo del cuadro*/
+	background: #001530;    /*Color de fondo del cuadro*/
 	margin: 5px auto; /*margen del objeto  "auto= centrar el cuadro"*/
 	border-radius: 10px;   /*bordes en las esquinas*/
 	/*height: 50px;  grande del cuadro*/ 
@@ -90,7 +90,7 @@ aside p {
 article.servicio {
 	display: inline-block;
 	vertical-align: top;
-	width: 30%;
+	width: 20%;
 	background: #dfdfdf;
 	padding: 1em;
 	border-radius: 10px;
