@@ -14,7 +14,7 @@ body {
 	}
 header, section, footer {
 	width: 90%;   /*pixeles del ancho del cuadro*/
-	background: #fbfbfb;    /*Color de fondo del cuadro*/
+	background: #960303;    /*Color de fondo del cuadro*/
 	margin: 5px auto; /*margen del objeto  "auto= centrar el cuadro"*/
 	border-radius: 10px;   /*bordes en las esquinas*/
 	/*height: 50px;  grande del cuadro*/ 
@@ -78,7 +78,7 @@ section div {
 	display: inline-block;
 	vertical-align: top;
 	width: 22%;
-	background: #dfdfdf;
+	background: #3c829e;
 	padding: 1em;
 	border-radius: 10px;
 	margin: 10px 0;

@@ -1,0 +1,23 @@
+commit a3bddf692744a3fc85acfb7f86c3eb0aae9e6759
+Author: rene zuniga <renez3394@gmail.com>
+Date:   Mon Mar 26 18:59:13 2018 -0300
+
+    cambio en el video insertado
+
+commit 0e88923d59609687727b5a5680fff15bf84b260a
+Author: rene zuniga <renez3394@gmail.com>
+Date:   Mon Mar 26 18:14:15 2018 -0300
+
+    arreglo de tamaño en elementos del footer
+
+commit c0c03288781ccb177a5036eaf5b8637107453c99
+Author: rene zuniga <renez3394@gmail.com>
+Date:   Mon Mar 26 17:47:30 2018 -0300
+
+    testeo de colores
+
+commit d7660616b7d225310e8aa0c9036b29c2b29b4178
+Author: rene zuniga <renez3394@gmail.com>
+Date:   Mon Mar 26 13:40:42 2018 -0300
+
+    punto de partida del proyecto
